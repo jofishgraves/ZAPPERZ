@@ -1,0 +1,63 @@
+<html>
+<title>Zapperz!</title>
+<head>
+<h1>Zapperz! Instructions</h1>
+</head>
+<body>
+<h3>How to play</h3>
+<ul>
+    <li><b>What is this about?</b></li>
+    <ul>
+        <li>Your task is to kill all of the aliens.</li>
+        <li>The aliens are green blocks and they will fight you.</li>
+        <li>But be careful when fighting back, you only have 3 lives! Lose them all and it's game over.</li>
+        <li>You will also have four shields, each shield can be broken by the aliens or your laser.</li>
+        <li>Once a shield takes four hits, it is gone.</li>
+        <li>You can keep going if you destroy all of the aliens in one round to improve your score, but each time you continue, it does get more challenging</li>
+        <li>Once you run out lives, your score will be reset the next round.</li>
+    </ul>
+    <li><b>Controls</b></li>
+    <ul>
+        <li>Moving Left: LeftArrow, a, j</li>
+        <li>Moving Right: RightArrow, d, l</li>
+        <li>Fire Laser: f</li>
+    </ul>
+</ul>
+<h3>Other Notes</h3>
+<ul>
+    <li><b>Interesting or Problematic Code</b></li>
+        <ul>
+            <li>Collision detection for the aliens was some of the most problematic code I've had to work with. Mostly because the y axis was inverted</li>
+            <li>Other than alien collison, all of the other collision were pretty easy</li>
+            <li>This game was going to have an aim assist feature so that you could easily predict shots.</li>
+                <ul>
+                    <li>This was scrapped due to it being kind of dumb and was causing some speed issues as more items got added</li>
+                </ul>
+            <li>Not terriably interesting but the way the aliens moved is only track by the top two corners of the alien grid and changes depending on if the alien is alive or not.</li>
+            <li>I added the comments above the canvas as a little bit of a goofy quirky to the game but over time became more useful as a game mechanic</li>
+        </ul>
+    <li><b>Components Added / What's different</b></li>
+        <ul>
+            <li>I should have everything from the list added in this project.</li>
+            <li>All member data is private and use get and set to retrieve canvas information.</li>
+            <li>A defender is implemented and has movement.</li>
+            <li>A block of aliens are implemented with a small explosion animation, travels appropriately, can shoot lasers, and the aliens speed up as more are destroyed.</li>
+                <ul>
+                    <li>Note: This game has rounds, and is pratically endless-if you have enough lives. The speed of the aliens after each round will not reset and the aliens get faster and faster.</li>
+                    <li>After every 5 aliens die, then the aliens speed up slightly in the game</li>
+                </ul>
+            <li>There are four shields in the game and regenerate after a round is completed. Each shield can take up to four hits before it can be destroyed by either the player or the aliens.</li>
+            <li>There are elements in the game that show if you won or lost a round.</li>
+            <li>if the aliens reach the bottom and the ship still has lives, the aliens will reset to their initial position but keep the speed they had.</li>
+            <li>The defender does have mutiple lives.</li>
+            <li>There are HTML elements that display the score and the amount of lives the defender has.</li>
+        </ul>
+</ul>
+<h3>Assignment Information</h3>
+<ul>
+    <li>Zappers! is made by Joseph Graves for Computer Graphics (CMAC-3780).</li>
+</ul>
+
+<a href="zapgame.html">Click here to play</a>
+</body>
+</html>
