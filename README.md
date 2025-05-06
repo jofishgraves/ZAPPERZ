@@ -9,6 +9,3 @@ Gun Movement:
   - Move Left: LeftArrow, a, j
   - Move Right: RightArrow, d, l
   - Fire Laser: f
-
-# DISCLAIMER:
-  - This is not published into a website. Further details will be noted in the future.
